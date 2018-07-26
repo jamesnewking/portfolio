@@ -7,28 +7,36 @@ $output = [
     'messages' => []
 ];
 //Sanitize name field
-$message['name'] = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
+if (isset($_POST['name'])){
+    $message['name'] = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
+}
 if(empty($message['name'])){
     $output['success'] = false;
     $output['messages'][] = 'missing name key';
 }
 
 //Validate email field
-$message['email'] = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
+if (isset($_POST['email'])) {
+    $message['email'] = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
+}
 if(empty($message['email'])){
     $output['success'] = false;
     $output['messages'][] = 'missing email key';
 }
 
 //Validate message field
-$message['message'] = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
+if (isset($_POST['name'])) {
+    $message['message'] = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
+}
 //if(empty($message['message'])){
 //    $output['success'] = false;
 //    $output['messages'][] = 'missing message key';
 //}
 
 //Validate phone number
-$message['phone'] = preg_replace('/[^0-9]/','', $_POST['phone_number']);
+if (isset($_POST['name'])) {
+    $message['phone'] = preg_replace('/[^0-9]/', '', $_POST['phone_number']);
+}
 //if(empty($message['phone']) && count($message['phone']) >= 10 && count($message['phone']) <= 11){
 //    $output['success'] = false;
 //    $output['messages'][] = 'missing phone key';
@@ -36,7 +44,9 @@ $message['phone'] = preg_replace('/[^0-9]/','', $_POST['phone_number']);
 
 
 //Validate subject field
-$message['subject'] = filter_var($_POST['subject'], FILTER_SANITIZE_STRING);
+if (isset($_POST['name'])) {
+    $message['subject'] = filter_var($_POST['subject'], FILTER_SANITIZE_STRING);
+}
 if(empty($message['message'])){
     $output['success'] = false;
     $output['messages'][] = 'missing subject key';
@@ -86,6 +96,9 @@ $message['subject'] = $message['name']." has sent you a message on your portfoli
 
 $mail->Subject = $message['subject'];
 $message['message'] = nl2br($message['message']); //convert newline characters to line break html tags
+//need to add phone number to message
+// $message['phone']
+$message['message'] = 'Phone number: '.$message['phone'].'<br>'.$message['message'];
 $mail->Body    = $message['message'];
 $mail->AltBody = htmlentities($message['message']);
 
