@@ -52,8 +52,8 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>contact us</find>
-      <find>contact me</find>
+      <find />
+      <find />
       <find>phpmailer</find>
       <find>php_mail</find>
       <find>mail_handler.php</find>
@@ -69,7 +69,7 @@
       <find>tell</find>
       <find>btn-prima</find>
       <find>fluffit</find>
-      <find>james wang</find>
+      <find />
       <find>linked</find>
       <find>snack_seriously.jpg</find>
       <find>css</find>
@@ -110,9 +110,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1926" />
-    <option name="width" value="732" />
-    <option name="height" value="434" />
+    <option name="x" value="-15" />
+    <option name="y" value="-15" />
+    <option name="width" value="3233" />
+    <option name="height" value="1833" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
