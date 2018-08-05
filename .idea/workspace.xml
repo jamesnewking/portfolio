@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2821299b-fd78-485e-9352-89ddce1a8fd6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/snack_seriously.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/portfolio/snack_seriously.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,13 +12,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.2618403">
+    <splitter split-orientation="horizontal" split-proportion="0.5013532">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="mail_handler.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/php_mailer/mail_handler.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="590">
+                <state relative-caret-position="1700">
                   <caret line="100" column="63" selection-start-line="100" selection-start-column="63" selection-end-line="100" selection-end-column="63" />
                 </state>
               </provider>
@@ -29,8 +27,8 @@
           <file leaf-file-name="agency.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/agency.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="291">
-                  <caret line="343" column="46" selection-start-line="343" selection-start-column="35" selection-end-line="343" selection-end-column="46" />
+                <state relative-caret-position="17">
+                  <caret line="346" column="1" selection-start-line="346" selection-start-column="1" selection-end-line="346" selection-end-column="1" />
                 </state>
               </provider>
             </entry>
@@ -39,19 +37,10 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="736">
-                  <caret line="521" column="14" lean-forward="true" selection-start-line="490" selection-start-column="8" selection-end-line="521" selection-end-column="14" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="agency.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="agency.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/agency.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
+                <state relative-caret-position="148">
                   <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
                 </state>
               </provider>
@@ -63,8 +52,8 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>contact us</find>
-      <find>contact me</find>
+      <find />
+      <find />
       <find>phpmailer</find>
       <find>php_mail</find>
       <find>mail_handler.php</find>
@@ -80,12 +69,13 @@
       <find>tell</find>
       <find>btn-prima</find>
       <find>fluffit</find>
-      <find>james wang</find>
+      <find />
       <find>linked</find>
       <find>snack_seriously.jpg</find>
       <find>css</find>
       <find>h3</find>
       <find>list-inline</find>
+      <find>jameswww</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -119,10 +109,11 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-1926" />
-    <option name="width" value="1831" />
-    <option name="height" value="1086" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-15" />
+    <option name="y" value="-15" />
+    <option name="width" value="3233" />
+    <option name="height" value="1833" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -132,7 +123,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -151,30 +141,11 @@
               <item name="css" type="462c0819:PsiDirectoryNode" />
               <item name="agency.css" type="620a8d5e:NestingTreeNode" />
             </path>
-            <path>
-              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="mail" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="php_mailer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -221,16 +192,17 @@
       <workItem from="1532640964703" duration="2557000" />
       <workItem from="1532645046067" duration="2457000" />
       <workItem from="1532888475690" duration="26000" />
-      <workItem from="1533182753923" duration="2617000" />
+      <workItem from="1533182753923" duration="3340000" />
+      <workItem from="1533426834373" duration="71000" />
+      <workItem from="1533427177776" duration="115000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19230000" />
+    <option name="totallyTimeSpent" value="20139000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1926" y="0" width="1831" height="1086" extended-state="0" />
-    <editor active="true" />
+    <frame x="-1928" y="-8" width="1936" height="1096" extended-state="6" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
@@ -239,7 +211,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Gulp" order="2" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16544326" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19083156" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -549,7 +521,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/php_mailer/mail_handler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
+        <state relative-caret-position="1700">
           <caret line="100" column="63" selection-start-line="100" selection-start-column="63" selection-end-line="100" selection-end-column="63" />
         </state>
       </provider>
@@ -561,24 +533,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/agency.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        <state relative-caret-position="285">
+          <caret line="184" column="58" selection-start-line="184" selection-start-column="50" selection-end-line="184" selection-end-column="58" />
+          <folding>
+            <element signature="e#56514#56520#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/agency.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="343" column="46" selection-start-line="343" selection-start-column="35" selection-end-line="343" selection-end-column="46" />
+        <state relative-caret-position="17">
+          <caret line="346" column="1" selection-start-line="346" selection-start-column="1" selection-end-line="346" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/js/agency.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="521" column="14" lean-forward="true" selection-start-line="490" selection-start-column="8" selection-end-line="521" selection-end-column="14" />
+        <state relative-caret-position="148">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
         </state>
       </provider>
     </entry>
