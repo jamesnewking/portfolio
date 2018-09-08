@@ -2,7 +2,7 @@
   "use strict"; // Start of use strict
   $(window).scroll(function(){
       if ($('#navbarResponsive').hasClass('show')){
-        $('#navbarResponsive').removeClass('show');
+          $('.navbar-collapse').collapse('hide');
       }
   });
 
