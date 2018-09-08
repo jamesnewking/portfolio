@@ -1,5 +1,10 @@
 (function($) {
   "use strict"; // Start of use strict
+  $(window).scroll(function(){
+      if ($('#navbarResponsive').hasClass('show')){
+          $('.navbar-collapse').collapse('hide');
+      }
+  });
 
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
