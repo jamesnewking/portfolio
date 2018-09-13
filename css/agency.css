@@ -108,12 +108,16 @@ img::-moz-selection {
   background-color: #212529;
 }
 
+#mainNav .navbar-toggler:hover {
+  background-color: white;
+}
+
 #mainNav .navbar-toggler {
   font-size: 12px;
   right: 0;
   padding: 13px;
   text-transform: uppercase;
-  color: white;
+  color: black;
   border: 0;
   background-color: #fed136;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
