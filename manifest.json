@@ -1,0 +1,15 @@
+{
+  "short_name": "James Wang",
+  "name": "James Wang Web Portfolio",
+  "icons": [
+    {
+      "src":"img/dev_icon.jpg",
+      "sizes": "192x192",
+      "type": "image/jpg"
+    }
+  ],
+  "start_url": "",
+  "background_color": "#fff",
+  "theme_color": "#fff",
+  "display": "standalone"
+}
