@@ -1,6 +1,19 @@
 (function($) {
   "use strict"; // Start of use strict
 
+  if(navigator.appCodeName==='Mozilla') {
+      $('img.lazyload').each(function () {
+          var $this = $(this);
+          if($this.data('data-src')){
+              var res = /(?:([^"'\s,]+)\s*(?:\s+\d+[wx])(?:,\s*)?)+/g.exec($this.data('data-src'))
+              $this.attr('src', res[res.length-1]);
+          } else {
+              $this.attr('src', $this.data('src'));
+          }
+      });
+  }
+
+
   $(window).scroll(function(){
       if ($('#navbarResponsive').hasClass('show')){
           $('.navbar-collapse').collapse('hide');
