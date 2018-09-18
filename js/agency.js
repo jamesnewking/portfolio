@@ -1,7 +1,7 @@
 (function($) {
   "use strict"; // Start of use strict
 
-  if(navigator.appCodeName==='Mozilla') {
+  if(navigator.userAgent.indexOf("Chrome") === -1 ) {
       $('img.lazyload').each(function () {
           var $this = $(this);
           if($this.data('data-src')){
@@ -12,7 +12,6 @@
           }
       });
   }
-
 
   $(window).scroll(function(){
       if ($('#navbarResponsive').hasClass('show')){
