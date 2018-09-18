@@ -1,10 +1,18 @@
 (function($) {
   "use strict"; // Start of use strict
+
   $(window).scroll(function(){
       if ($('#navbarResponsive').hasClass('show')){
           $('.navbar-collapse').collapse('hide');
       }
   });
+
+    document.addEventListener('lazybeforeunveil', function(e){
+        var bg = e.target.getAttribute('data-bg');
+        if(bg){
+            e.target.style.backgroundImage = 'url(' + bg + ')';
+        }
+    });
 
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
