@@ -719,3 +719,15 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 #msg {
   padding-bottom: 1em;
 }
+
+.txt-type {
+    border-right: 0.2rem solid white;
+    padding-right: 2px;
+    animation: cursorBlink 0.5s step-end infinite alternate;
+}
+
+@keyframes cursorBlink {
+    50% {
+        border-color:transparent;
+    }
+}
