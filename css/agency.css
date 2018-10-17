@@ -82,6 +82,10 @@ section h3.section-subheading {
   color: red;
 }
 
+.btn-info:hover {
+  color: black;
+}
+
 .btn-primary:active, .btn-primary:focus {
   box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
 }
@@ -608,10 +612,14 @@ header.masthead .intro-text .intro-heading {
 
 section#contact {
   background-color: #212529;
-  background-image: url("../img/map-image.png");
+  /*background-image: url("../img/map-image.png");*/
   background-repeat: no-repeat;
   background-position: center;
 }
+
+/*section#contact.lazyloaded {*/
+  /*background-image: url("../img/map-image.png");*/
+/*}*/
 
 section#contact .section-heading {
   color: #fff;
@@ -710,4 +718,16 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 #msg {
   padding-bottom: 1em;
+}
+
+.txt-type {
+    border-right: 0.2rem solid white;
+    padding-right: 2px;
+    animation: cursorBlink 0.5s step-end infinite alternate;
+}
+
+@keyframes cursorBlink {
+    50% {
+        border-color:transparent;
+    }
 }

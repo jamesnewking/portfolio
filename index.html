@@ -4,33 +4,37 @@
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124584020-1"></script>
+    <script type="module" src="js/lazysizes.min.js" async=""></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'UA-124584020-1');
     </script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="James Wang Web Portfolio" content="">
-    <meta name="James Wang" content="">
 
-    <title>James Wang Web Portfolio</title>
-    <link rel="icon" href="img/dev_icon.png" type="image/png" >
+    <meta charset="utf-8">
+    <meta name="title" content="James Wang Web Portfolio in JavaScript, HTML5, CSS3">
+    <meta name="description" content="Author: James Wang,
+     Technology: web development, Type: Online resume, Date: 2018">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>James Wang Web Portfolio - Software QA Engineer</title>
+    <link rel="icon" href="img/dev_icon.jpg" type="image/jpg" >
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="preload stylesheet" type="text/css" as="style">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="preload stylesheet" type="text/css" as="style">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='preload stylesheet' type='text/css' as="style">
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='preload stylesheet' type='text/css' as="style">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='preload stylesheet' type='text/css' as="style">
 
     <!-- Custom styles for this template -->
-    <link href="css/agency.css" rel="stylesheet">
+    <link href="css/agency.min.css" rel="preload stylesheet" as="style">
+    <link rel="manifest" href="manifest.json">
 
+    <link rel="canonical" href="https://jameswww.com/" />
   </head>
 
   <body id="page-top">
@@ -68,7 +72,7 @@
         <div class="intro-text">
           <div class="intro-heading text-uppercase black-shadow">James Wang</div>
           <div class="intro-lead-in black-shadow">
-            Software QA Engineer
+             <span class="txt-type" data-words='["QA Engineer", "Web Developer"]' data-wait="1800" id="typewriter">engineer</span>
           </div>
           <a class="btn btn-info btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
         </div>
@@ -80,7 +84,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Technologies</h2>
+            <h1 class="section-heading text-uppercase">Technologies</h1>
             <h3 class="section-subheading text-muted">Web Development</h3>
           </div>
         </div>
@@ -189,10 +193,10 @@
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/snack_seriously.jpg" alt="SnackSeriously">
+              <img class="lazyload img-fluid" data-src="img/portfolio/snack_seriously.jpg" alt="SnackSeriously">
             </a>
             <div class="portfolio-caption">
-              <h4><a target="_blank" href="https://snackseriously.com">Snack Seriously</a></h4>
+              <h4><a target="_blank" rel="noopener" href="https://snackseriously.com">Snack Seriously</a></h4>
               <p class="text-muted">React, php, mySQL</p>
             </div>
           </div>
@@ -203,10 +207,10 @@
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/catch_me.jpg" alt="Catch Me">
+              <img class="lazyload img-fluid" data-src="img/portfolio/catch_me.jpg" alt="Catch Me">
             </a>
             <div class="portfolio-caption">
-              <h4><a target="_blank" href="https://jameswww.com/catch_me/">Catch Me</a></h4>
+              <h4><a target="_blank" rel="noopener" href="https://jameswww.com/catch_me/">Catch Me</a></h4>
               <p class="text-muted">HTML, CSS3, jQuery, API</p>
             </div>
           </div>
@@ -218,10 +222,10 @@
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/calculator.jpg" alt="">
+              <img class="lazyload img-fluid" data-src="img/portfolio/calculator.jpg" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4><a target="_blank" href="https://jameswww.com/calculator/">Calculator</a></h4>
+              <h4><a target="_blank" rel="noopener" href="https://jameswww.com/calculator/">Calculator</a></h4>
               <p class="text-muted">HTML, CSS3, jQuery</p>
             </div>
           </div>
@@ -286,7 +290,7 @@
             <ul class="timeline">
               <li>
                 <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/fp_logo.jpg" alt="">
+                  <img class="lazyload rounded-circle img-fluid" data-src="img/about/fp_logo.jpg" alt="">
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
@@ -300,7 +304,7 @@
               </li>
               <li class="timeline-inverted">
                 <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/broadcom.jpg" alt="">
+                  <img class="lazyload rounded-circle img-fluid" data-src="img/about/broadcom.jpg" alt="">
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
@@ -315,7 +319,7 @@
               </li>
               <li>
                 <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/intel.jpg" alt="">
+                  <img class="lazyload rounded-circle img-fluid" data-src="img/about/intel.jpg" alt="">
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
@@ -330,7 +334,7 @@
               </li>
               <li class="timeline-inverted">
                 <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/kingston.jpg" alt="">
+                  <img class="lazyload rounded-circle img-fluid" data-src="img/about/kingston.jpg" alt="">
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
@@ -345,7 +349,7 @@
               </li>
               <li class="timeline-image">
                 <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/ucsd.jpg" alt="">
+                  <img class="lazyload rounded-circle img-fluid" data-src="img/about/ucsd.jpg" alt="">
 
                 </div>
                 <div class="timeline-panel">
@@ -363,7 +367,7 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact">
+    <section id="contact" class="lazyload" data-bg='img/map-image.png'>
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -415,12 +419,12 @@
           <div class="col-md-4 offset-md-4">
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
-                <a target="_blank" href="https://github.com/jamesnewking">
+                <a target="_blank" rel="noopener" href="https://github.com/jamesnewking">
                   <i class="fa fa-github"></i>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a target="_blank"  href="https://www.linkedin.com/in/james-w/">
+                <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/james-w/">
                   <i class="fa fa-linkedin"></i>
                 </a>
               </li>
@@ -451,16 +455,16 @@
                   <!-- Project Details Go Here -->
                   <h3 class="text-uppercase">Snack Seriously</h3>
 
-                  <a target="_blank" href="https://snackseriously.com">
+                  <a target="_blank" rel="noopener" href="https://snackseriously.com">
                     <p class="item-intro"><em>LIVE CODE</em></p>
-                    <img class="img-fluid d-block mx-auto" src="img/portfolio/snack_seriously.jpg" alt="">
+                    <img class="lazyload img-fluid d-block mx-auto" data-src="img/portfolio/snack_seriously.jpg" alt="">
                   </a>
                   <p>A mobile responsive website built for searching snacks. Snack data includes pictures, nutritional facts, filtering of allergens, search bar functionality, user login and authentication. Features built using React, React Context API, Axios calls made to MySQL database utilizing PHP hosted on EC2 AWS.</p>
                   <ul class="list-inline social-buttons">
                     <li>Date: July 2018</li>
                       <br>
                       <li class="list-inline-item">
-                        <a target="_blank" href="https://github.com/Patriciadburns1/snack_seriously">
+                        <a target="_blank" rel="noopener" href="https://github.com/Patriciadburns1/snack_seriously">
                           <i class="fa fa-github"></i>
                         </a>
                       </li>
@@ -491,9 +495,9 @@
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
                   <h3 class="text-uppercase">Catch Me If You Can</h3>
-                  <a target="_blank" href="https://jameswww.com/catch_me/">
+                  <a target="_blank" rel="noopener" href="https://jameswww.com/catch_me/">
                     <p class="item-intro"><em>LIVE CODE</em></p>
-                    <img class="img-fluid d-block mx-auto" src="img/portfolio/catch_me.jpg" alt="">
+                    <img class="lazyload img-fluid d-block mx-auto" data-src="img/portfolio/catch_me.jpg" alt="">
                   </a>
                   <p>This was a hackathon project at LearningFuze web accelerator.</p>
                   <p>Technologies used: HTML5, CSS3, jQuery, Bootstrap, API</p>
@@ -502,7 +506,7 @@
                     <li>Date: June 2018</li>
                     <br>
                     <li class="list-inline-item">
-                      <a target="_blank" href="https://github.com/jamesnewking/c418_hackathon2">
+                      <a target="_blank" rel="noopener" href="https://github.com/jamesnewking/catchme">
                         <i class="fa fa-github"></i>
                       </a>
                     </li>
@@ -534,16 +538,16 @@
                   <!-- Project Details Go Here -->
                   <h3 class="text-uppercase">Calculator</h3>
 
-                  <a target="_blank" href="https://jameswww.com/calculator/">
+                  <a target="_blank" rel="noopener" href="https://jameswww.com/calculator/">
                       <p class="item-intro"><em>Web project</em></p>
-                    <img class="img-fluid d-block mx-auto" src="img/portfolio/calculator.jpg" alt="">
+                    <img class="lazyload img-fluid d-block mx-auto" data-src="img/portfolio/calculator.jpg" alt="">
                   </a>
                   <p>This was a solo project to duplicate the internal logic of a modern calculator. There are many corner cases to consider such as multiple operator and equal sign presses.</p>
                   <ul class="list-inline social-buttons">
                     <li>Date: May 2018</li>
                     <br>
                     <li class="list-inline-item">
-                      <a target="_blank" href="https://github.com/jamesnewking/calculator">
+                      <a target="_blank" rel="noopener" href="https://github.com/jamesnewking/mycalculator">
                         <i class="fa fa-github"></i>
                       </a>
                     </li>
@@ -559,107 +563,107 @@
       </div>
     </div>
 
-    <!-- Modal 4 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Web project</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
-                  <p>James' web portfolio</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Lines</li>
-                    <li>Category: Branding</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!--&lt;!&ndash; Modal 4 &ndash;&gt;-->
+    <!--<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">-->
+      <!--<div class="modal-dialog">-->
+        <!--<div class="modal-content">-->
+          <!--<div class="close-modal" data-dismiss="modal">-->
+            <!--<div class="lr">-->
+              <!--<div class="rl"></div>-->
+            <!--</div>-->
+          <!--</div>-->
+          <!--<div class="container">-->
+            <!--<div class="row">-->
+              <!--<div class="col-lg-8 mx-auto">-->
+                <!--<div class="modal-body">-->
+                  <!--&lt;!&ndash; Project Details Go Here &ndash;&gt;-->
+                  <!--<h2 class="text-uppercase">Project Name</h2>-->
+                  <!--<p class="item-intro text-muted">Web project</p>-->
+                  <!--<img class="lazyload img-fluid d-block mx-auto" data-src="img/portfolio/04-full.jpg" alt="">-->
+                  <!--<p>James' web portfolio</p>-->
+                  <!--<ul class="list-inline">-->
+                    <!--<li>Date: January 2017</li>-->
+                    <!--<li>Client: Lines</li>-->
+                    <!--<li>Category: Branding</li>-->
+                  <!--</ul>-->
+                  <!--<button class="btn btn-primary" data-dismiss="modal" type="button">-->
+                    <!--<i class="fa fa-times"></i>-->
+                    <!--Close Project</button>-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
 
-    <!-- Modal 5 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Web Project</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
-                  <p>James' web portfolio</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Southwest</li>
-                    <li>Category: Website Design</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!--&lt;!&ndash; Modal 5 &ndash;&gt;-->
+    <!--<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">-->
+      <!--<div class="modal-dialog">-->
+        <!--<div class="modal-content">-->
+          <!--<div class="close-modal" data-dismiss="modal">-->
+            <!--<div class="lr">-->
+              <!--<div class="rl"></div>-->
+            <!--</div>-->
+          <!--</div>-->
+          <!--<div class="container">-->
+            <!--<div class="row">-->
+              <!--<div class="col-lg-8 mx-auto">-->
+                <!--<div class="modal-body">-->
+                  <!--&lt;!&ndash; Project Details Go Here &ndash;&gt;-->
+                  <!--<h2 class="text-uppercase">Project Name</h2>-->
+                  <!--<p class="item-intro text-muted">Web Project</p>-->
+                  <!--<img class="lazyload img-fluid d-block mx-auto" data-src="img/portfolio/05-full.jpg" alt="">-->
+                  <!--<p>James' web portfolio</p>-->
+                  <!--<ul class="list-inline">-->
+                    <!--<li>Date: January 2017</li>-->
+                    <!--<li>Client: Southwest</li>-->
+                    <!--<li>Category: Website Design</li>-->
+                  <!--</ul>-->
+                  <!--<button class="btn btn-primary" data-dismiss="modal" type="button">-->
+                    <!--<i class="fa fa-times"></i>-->
+                    <!--Close Project</button>-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
 
-    <!-- Modal 6 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Web project</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
-                  <p>James' web portfolio</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Window</li>
-                    <li>Category: Photography</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!--&lt;!&ndash; Modal 6 &ndash;&gt;-->
+    <!--<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">-->
+      <!--<div class="modal-dialog">-->
+        <!--<div class="modal-content">-->
+          <!--<div class="close-modal" data-dismiss="modal">-->
+            <!--<div class="lr">-->
+              <!--<div class="rl"></div>-->
+            <!--</div>-->
+          <!--</div>-->
+          <!--<div class="container">-->
+            <!--<div class="row">-->
+              <!--<div class="col-lg-8 mx-auto">-->
+                <!--<div class="modal-body">-->
+                  <!--&lt;!&ndash; Project Details Go Here &ndash;&gt;-->
+                  <!--<h2 class="text-uppercase">Project Name</h2>-->
+                  <!--<p class="item-intro text-muted">Web project</p>-->
+                  <!--<img class="lazyload img-fluid d-block mx-auto" data-src="img/portfolio/06-full.jpg" alt="">-->
+                  <!--<p>James' web portfolio</p>-->
+                  <!--<ul class="list-inline">-->
+                    <!--<li>Date: January 2017</li>-->
+                    <!--<li>Client: Window</li>-->
+                    <!--<li>Category: Photography</li>-->
+                  <!--</ul>-->
+                  <!--<button class="btn btn-primary" data-dismiss="modal" type="button">-->
+                    <!--<i class="fa fa-times"></i>-->
+                    <!--Close Project</button>-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -669,11 +673,11 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Contact form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+    <script src="js/jqBootstrapValidation.min.js"></script>
+    <script src="js/contact_me.min.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/agency.js"></script>
+    <script src="js/agency.min.js"></script>
 
   </body>
 
